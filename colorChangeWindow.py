@@ -11,8 +11,18 @@ def mouseClick(event):
     blue = Color(0x0000FF,1)
     black = Color(0x000000,1)
     blackOutline = LineStyle(1,black)
-
-    Sprite(Rectangle)
+    num = randint(1,4)
+    if num == 1:
+        color = red
+    elif num == 2:
+        color = green
+    elif num == 3:
+        color = blue
+    else:
+        color = black
+    line = LineStyle(3,color)
+    square = RectangleAsset(1000,1000,blackOutline,color)
+    Sprite(square)
 
 mouseClick(event)
 App().listenMouseEvent('click',mouseClick)
