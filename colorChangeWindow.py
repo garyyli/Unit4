@@ -2,7 +2,7 @@
 #10/16/17
 #colorChangeWindow.py
 
-from math import randint
+from random import randint
 from ggame import *
 
 def mouseClick(event):
@@ -16,4 +16,4 @@ def mouseClick(event):
 
 mouseClick(event)
 App().listenMouseEvent('click',mouseClick)
-App.run()
+App().run()
