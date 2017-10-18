@@ -24,6 +24,5 @@ def mouseClick(event):
     square = RectangleAsset(1000,1000,blackOutline,color)
     Sprite(square)
 
-mouseClick(event)
 App().listenMouseEvent('click',mouseClick)
 App().run()
