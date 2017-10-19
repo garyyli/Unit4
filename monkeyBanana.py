@@ -4,6 +4,11 @@
 
 from ggame import *
 
+#constants
+ROWS = 20
+COLS = 40
+CELL_SIZE = 20
+
 if __name__ == '__main__':
     
     green = Color(0x006600,1)
