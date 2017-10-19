@@ -13,7 +13,7 @@ if __name__ == '__main__':
     
     green = Color(0x006600,1)
     
-    jungleBox = RectangleAsset(800,600,LineStyle(1,green),green)
+    jungleBox = RectangleAsset(COLS*CELL_SIZE,ROWS*CELL_SIZE,LineStyle(1,green),green)
     
     Sprite(jungleBox)
     
