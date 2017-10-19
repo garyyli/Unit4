@@ -4,11 +4,11 @@
 
 from ggame import *
 
-if __name__ '__main__':
+if __name__ == '__main__':
     
     green = Color(0x006600,1)
     
-    jungleBox = RectangeAsset(800,600,LineStyle(1,green),green)
+    jungleBox = RectangleAsset(800,600,LineStyle(1,green),green)
     
     Sprite(jungleBox)
     
