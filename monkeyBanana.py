@@ -38,13 +38,18 @@ def moveUp(event):
 def moveBanana():
     banana.x = randint(0,COLS-1)*CELL_SIZE
     banana.y = randint(0,ROWS-1)*CELL_SIZE
+    data['frames'] = 0
 
 def updateScore():
     data['score'] +=10
     data['scoreText'].destroy()
     scoreBox = TextAsset('Score = '+str(data['score']))
     data['scoreText'] = Sprite(scoreBox,(0,ROWS*CELL_SIZE))
-    
+
+def step():
+    data['frames'] += 1
+    if data['frames'] ==300:
+        moveBanana()
 
 if __name__ == '__main__':
     
