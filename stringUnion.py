@@ -5,7 +5,6 @@
 def stringUnion(str1,str2):
     totalStr = ''
     totalStr += str1
-        
     totalStr +=str2
     finalStr = ''
     for ch in totalStr:
@@ -19,4 +18,4 @@ def stringUnion(str1,str2):
             
     return finalStr
     
-print(stringUnion('mississippi','pennsyvania'))
+print(stringUnion('mississippi','pennsylvania'))
