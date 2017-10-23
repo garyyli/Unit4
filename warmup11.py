@@ -8,4 +8,4 @@ def isPrime(n):
             return False
     return True
     
-print(isPrime(9))
+print(isPrime(8))
