@@ -6,15 +6,17 @@ from math import sqrt
 
 x1 = int(input('Enter x1: '))
 y1 = int(input('Enter y1: '))
-x2 = int(input('Enter x1: '))
+x2 = int(input('Enter x2: '))
 y2 = int(input('Enter y2: '))
-x3 = int(input('Enter x1: '))
+x3 = int(input('Enter x3: '))
 y3 = int(input('Enter y3: '))
 
 
-def distance(x1, x2, y1, y2):
+def distance12(x1, x2, y1, y2):
     return (sqrt(((y2-y1)**2)+((x2-x1)**2)))
 
-print(distance(2,2,2,4))
+def distance23(x2, x3, y2, y3):
+    return (sqrt(((y3-y2)**2)+((x3-x2)**2)))
 
-def semiperimeter
+def distance31(x3, x1, y3, y1):
+    return (sqrt(((y1-y3)**2)+((x1-x3)**2)))
