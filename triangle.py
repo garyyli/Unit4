@@ -12,11 +12,11 @@ x3 = int(input('Enter x3: '))
 y3 = int(input('Enter y3: '))
 
 
-def distance12(x1, x2, y1, y2):
-    return (sqrt(((y2-y1)**2)+((x2-x1)**2)))
+def distance(a, b, c, d):
+    return (sqrt(((d-b)**2)+((c-a)**2)))
+    
+SideA = distance(x1, x2, y1, y2)
+SideB = distance(x2, x3, y2, y3)
+SideC = distance(x3, x1, y3, y1)
 
-def distance23(x2, x3, y2, y3):
-    return (sqrt(((y3-y2)**2)+((x3-x2)**2)))
-
-def distance31(x3, x1, y3, y1):
-    return (sqrt(((y1-y3)**2)+((x1-x3)**2)))
+def semiperimeter
