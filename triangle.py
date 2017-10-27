@@ -13,7 +13,7 @@ y3 = float(input('Enter y3: '))
 
 
 def distance(a, b, c, d):
-    return (sqrt(((d-b)**2)+((c-a)**2)))
+    return (sqrt(((d-c)**2)+((b-a)**2)))
     
 sideA = distance(x1, x2, y1, y2)
 sideB = distance(x2, x3, y2, y3)
