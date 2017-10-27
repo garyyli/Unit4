@@ -4,7 +4,7 @@
 
 def GCF(x,y):
     maxNum = max(x,y)
-    for i in range(maxNum,0,-1):
+    for i in range(maxNum,1,-1):
         if x%i==0 and y%i==0:
             return i
 
